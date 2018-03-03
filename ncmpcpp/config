@@ -10,9 +10,7 @@ visualizer_fifo_path = "/tmp/mpd.fifo"
 visualizer_output_name = "FIFO"
 visualizer_sync_interval = "30"
 visualizer_in_stereo = "yes"
-visualizer_type = "wave_filled"
-visualizer_color = 246,245,244,243,242,241,240,239,238,237,236,235
-visualizer_look = "|○"
+visualizer_type = "spectrum"
 
 # Columns
 song_columns_list_format = "(3f)[239]{} (35)[246]{t|f} (30)[blue]{a} (30)[green]{b} (5f)[240]{l}"
