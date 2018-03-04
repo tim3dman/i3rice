@@ -25,10 +25,10 @@ height = 27
 ;offset-x = 1%
 ;offset-y = 1%
 ;radius = 6.0
-fixed-center = true
+fixed-center = false
 
 ; Put the bar at the bottom of the screen
-bottom = false
+bottom = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -47,20 +47,20 @@ module-margin-right = 2
 
 font-0 = fixed:pixelsize=10;1
 font-1 = unifont:fontformat=truetype:size=11:antia
-font-2 = Wuncon Siji:style=Regular:pixelsize=12;0
+font-2 = WunconSiji:pixelsize=10;1
 
 modules-left = i3
-modules-center = mpd 
+modules-center = mpd
 #modules-right = filesystem xbacklight volume xkeyboard memory cpu wlan eth battery temperature date powermenu
-modules-right = temperature wlan eth date
+modules-right = wlan eth temperature date
 
 tray-position = right
-tray-padding = 3
+tray-padding = 2
 tray-transparent = false
 ;tray-background = #0063ff
 
 ;wm-restack = bspwm
-;wm-restack = i3
+wm-restack = i3
 
 ;override-redirect = true
 
@@ -214,7 +214,7 @@ interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
 format-connected-underline = #9f78e1
-label-connected = "%essid% "
+label-connected = %essid%
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>
@@ -237,7 +237,7 @@ interval = 3.0
 format-connected-underline = #55aa55
 format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.foreground-alt}
-label-connected = "%local_ip% "
+label-connected = %local_ip%
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>
@@ -252,8 +252,8 @@ interval = 5
 date =
 date-alt = " %Y-%m-%d"
 
-time = "%H:%M "
-time-alt ="%H:%M:%S "
+time = %H:%M
+time-alt = %H:%M:%S
 
 format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
@@ -326,8 +326,8 @@ format-underline = #f50a4d
 format-warn = <ramp> <label-warn>
 format-warn-underline = ${self.format-underline}
 
-label = "%temperature% "
-label-warn = "%temperature% "
+label = %temperature%
+label-warn = %temperature%
 label-warn-foreground = ${colors.secondary}
 
 ramp-0 = 
