@@ -28,7 +28,7 @@ height = 27
 fixed-center = true
 
 ; Put the bar at the bottom of the screen
-bottom = false
+bottom = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
